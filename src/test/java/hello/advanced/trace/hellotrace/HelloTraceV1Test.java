@@ -1,5 +1,7 @@
 package hello.advanced.trace.hellotrace;
 
+import hello.advanced.app.v0.OrderRepositoryV0;
+import hello.advanced.app.v0.OrderServiceV0;
 import hello.advanced.trace.TraceStatus;
 import org.junit.jupiter.api.Test;
 
@@ -21,5 +23,7 @@ class HelloTraceV1Test {
         TraceStatus status = trace.begin("hello");
         trace.exeption(status, new IllegalStateException());
     }
+
+
 
 }
